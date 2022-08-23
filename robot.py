@@ -8,4 +8,6 @@ class Robot:
         self.health = ()
         self.active_weapon = ()
 
-    
+
+    def attack(self, dinosaur):
+        dinosaur.health -= self.damage
