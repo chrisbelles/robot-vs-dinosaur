@@ -1,14 +1,11 @@
 from inspect import _void
 
 
-from robot import Robot
-
 class Dinosaur:
 
-    def __init__(self):
+    def __init__(self, name, attack_power):
         self.name = ""
         self.health = ()
         self.attack_power = ()
         
-        def attack(self, robot):
-        robot.health -= self.attack_power
+        def attack(self, robot): _void
