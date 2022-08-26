@@ -4,8 +4,10 @@ from inspect import _void
 class Dinosaur:
 
     def __init__(self, name, attack_power):
-        self.name = ""
-        self.health = ()
-        self.attack_power = ()
+        self.name = name
+        self.health = 1250
+        self.attack_power = attack_power
         
-        def attack(self, robot): _void
+    def attack(self, robot):
+        robot.health -= self.attack_power
+        print(f"{self.name} has struck for {self.attack_power}, {robot.name} has {robot.health} remaining.")
