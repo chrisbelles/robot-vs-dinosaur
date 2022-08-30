@@ -12,26 +12,26 @@ class Battlefield:
         self.dinosaur = Dinosaur("Barney", 90)
     def run_game(self): _void
 
-    def display_welcome(self): _void
-        if startBattle == "n"
+    def display_welcome(self):
+        startBattle = "n"
+        if startBattle == "n":
             print("Welcome to the most unlikely battle of your lifetime!")
             print("Tonight we will witness the impossible.")
-            print(f"{Robot.name}, A 4th generation defense-bot will fight for survival against the most primal of predators, {Dinosaur.name}")
-            startBattle = input("The fighters are ready, are you? y/n: ")
+            print(f"{self.robot.name}, A 4th generation defense-bot will fight for survival against the most primal of predators, {self.dinosaur.name}")
+        startBattle = input("The fighters are ready, are you? y/n: ")
 
-    def battle_phase(self):
+    def battle_phase(self): 
         if Dinosaur.health > 0 and Robot.health > 0:
             Dinosaur.attack()
             Robot.attack()
-        elif Dinosaur.health =< 0:
-            print(f"{Dinosaur.name} has been defeated! Your Champion is {Robot.name}!!")
-            break
-        elif Robot.health =< 0:
-            print(f"{Robot.name} has been defeated! Your Champion is {Dinosaur.name}!!")
-            break
+        elif Dinosaur.health <= 0:
+            winner = self.robot.name
+            print(f"{self.dinosaur.name} has been defeated! Your Champion is {self.robot.name}!!")
+        elif Robot.health <= 0:
+            winner = self.dinosaur.name
+            print(f"{self.robot.name} has been defeated! Your Champion is {self.dinosaur.name}!!")
         else:
-            
+            print(f"{winner} will hold the title for now, Who will be the next challenger?...")
 
 
-    def display_winner(self): _void
-        
+
