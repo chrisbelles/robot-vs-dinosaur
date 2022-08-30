@@ -1,5 +1,6 @@
 from inspect import _void
 from weapon import Weapon
+from dinosaur import Dinosaur
 
 
 class Robot:

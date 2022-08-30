@@ -8,6 +8,8 @@ weapon_one = Weapon("axe", 79)
 
 dinosaur_one = Dinosaur("Barney", 90)
 
-Battlefield()
+battle1 = Battlefield()
 
-battle_phase()
+battle1.display_welcome()
+
+battle1.battle_phase()

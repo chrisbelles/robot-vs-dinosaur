@@ -21,13 +21,13 @@ class Battlefield:
         startBattle = input("The fighters are ready, are you? y/n: ")
 
     def battle_phase(self): 
-        if Dinosaur.health > 0 and Robot.health > 0:
-            Dinosaur.attack()
-            Robot.attack()
-        elif Dinosaur.health <= 0:
+        if self.dinosaur.health > 0 and self.robot.health > 0:
+            self.dinosaur.attack()
+            self.robot.attack()
+        elif self.dinosaur.health <= 0:
             winner = self.robot.name
             print(f"{self.dinosaur.name} has been defeated! Your Champion is {self.robot.name}!!")
-        elif Robot.health <= 0:
+        elif self.robot.health <= 0:
             winner = self.dinosaur.name
             print(f"{self.robot.name} has been defeated! Your Champion is {self.dinosaur.name}!!")
         else:
