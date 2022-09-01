@@ -1,13 +1,11 @@
 from inspect import _void
 from weapon import Weapon
-from dinosaur import Dinosaur
-
 
 class Robot:
 
     def __init__(self, name):
         self.name = name
-        self.health =  1010
+        self.health =  101
         self.active_weapon = Weapon("axe", 50)
 
 
